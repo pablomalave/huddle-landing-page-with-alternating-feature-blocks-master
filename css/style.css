@@ -1,0 +1,329 @@
+body{
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Relacionado con Container Superior */
+.TopContainer{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../images/bg-hero-desktop.svg);
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: auto auto;
+    padding: 5%;
+}
+.btn{
+    height: 2rem;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.btnStart{
+    width: 300px;
+    color: white;
+    background-color: hsl(322, 100%, 66%) ;
+    padding: 20px 60px;
+    align-self: center;
+}
+
+.btnTry{
+    grid-column: 2 / 3;
+    justify-self: right;
+    width: 200px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 10px 10px hsla(229,6%,66%,25%);
+}
+
+
+.TopIllustration{
+    width: 95%;
+    justify-self: right;
+}
+
+.TopInfo{
+    grid-row: 2 / 3;
+    align-self: center;
+}
+
+.TopLogo{
+    width: 200px;
+    padding-bottom: 5rem;
+}
+
+.TopText{
+    margin-bottom: 4rem;
+}
+
+.TopTitle{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Relacionado con Container Medio */
+
+.MiddleContainer{
+    padding: 5% 5% 0 5%;
+}
+
+.Box{
+    color: hsl(208, 11%, 55%);
+    display: flex;
+    align-content: center;
+    padding: 5% 5% 5% 10%;
+    margin: 5%;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px hsla(229,6%,66%,25%);
+}
+
+.Box h2{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.BoxImg{
+    width: 40%;
+}
+
+.BoxText{
+    align-self: center;
+    width: 50%;
+}
+
+.Flowing{
+    flex-direction: row-reverse;
+}
+
+.Ready{
+    flex-direction: column;
+    margin: 0 20%;
+    padding: 5%;
+    background-color: white;
+    position: relative;
+    top: 100px;
+}
+
+.Ready a{
+    font-size: 1em;
+}
+
+.ReadyText h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Relacionado con Container Inferior */
+.BottomContainer{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 15% 10% 10% 10%;
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+}
+
+.BottomBox{
+    align-self: center;
+}
+
+.copyright{
+    font-size: 0.8em;
+    grid-row: 2 / 3;
+    grid-column: 1 / span 4;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.DataBox{
+    display: grid;
+    grid-template-columns: 5% auto;
+    margin-top: 10%;
+    align-content: flex-start;
+}
+
+.DataBox img{
+    width: 20px;
+    margin-top: 5px;
+}
+
+.DataBox p{
+    margin: 0 5% 0 5%;
+}
+
+li{
+    list-style: none;
+    line-height: 2;
+}
+
+.SocialNav{
+    text-align: center;
+}
+
+.SocialNav img{
+    width: 20%;
+    margin-right: 1em;
+}
+
+/* Relacionado con el FOOTER */
+footer{
+    grid-row: 3 / 4;
+    grid-column: 1 / span 4;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Responsivo Ancho 922px */
+@media (max-width: 922px)
+{
+    .TopContainer{
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .TopInfo{
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+        margin-bottom: 100px;
+        text-align: center;
+        padding: 2% 2% 5% 2%;
+    }
+
+    .TopIllustration{
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;
+    }
+
+    .Box{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .BoxImg{
+        width: 80%;
+        align-self: center;
+        margin-bottom: 2%;
+    }
+
+    .BoxText{
+        width: 80%;
+    }
+
+    .Ready{
+        flex-direction: column;
+        margin: 0 5%;
+        padding: 5%;
+    }
+
+    .BottomContainer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto ;
+        padding-top: 30%;
+    }
+
+    .BottomCol1{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .DataBox{
+        margin-top: 5%;
+    }
+
+    .BottomCol2{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        align-self: flex-end;
+    }
+
+    .BottomCol2 ul{
+        margin-bottom: 0;
+    }
+
+    .BottomCol3{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: stretch;
+    }
+
+    .BottomCol3 ul{
+        margin-top: 0;
+    }
+
+    .BottomCol4{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .copyright{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        justify-self: center;
+    }
+
+    footer{
+        grid-row: 6 / 7;
+        grid-column: 1 / 2;
+    }
+
+    .SocialNav img{
+        width: 10%;
+        margin-right: 1em;
+    }
+}
+
+/* Responsivo Ancho 600px */
+@media (max-width: 600px)
+{
+    body{
+        font-size: 16px;
+    }
+    
+    .TopLogo{
+        width: 150px;
+        align-self: center;
+        padding-bottom: 0;
+    }
+
+    .btnTry{
+        width: 100px;
+        align-self: center;
+    }
+
+    .Ready a{
+        width: 60%;
+    }
+}
+
+/* Responsivo Ancho 400px */
+@media (max-width: 400px)
+{
+    body{
+        font-size: 12px;
+    }
+
+    .BottomContainer{
+        padding-top: 50%;
+    }
+
+    .BottomLogo{
+        width: 150px;
+    }
+
+    .Ready a{
+        width: 50%;
+    }
+}
